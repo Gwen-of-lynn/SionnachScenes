@@ -1,45 +1,189 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Sionnach Scenes
+---
+### What does the fox see?
+---
+---
+Sionnach Scenes is a site selling scenic photography for wall art. Users can buy various sized prints with a selection of borders and framing options. There is an option of contacting the site for special requests.
 
-Welcome USER_NAME,
+---
+---
+## UX
+---
+---
+### Project Goals
+---
+Sionnach Scenes allows the site owner, and photographer, a site to connect with their customer base.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
+Sionnach Scenes is a store that allows the photographer to sell their work in an easy to navigate site for users. Photos are catogorized and searchable. Users can choose size, borders, frames, and quantities. 
 
-## Gitpod Reminders
+---
+#### Target Audience
+---
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+The target audiences are photographer(s) people who would like to buy photography to decorate their homes, and offices, and gift to others. 
 
-`python3 -m http.server`
+---
 
-A blue button should appear to click: *Make Public*,
+##### Photographer(s) goals:
 
-Another blue button should appear to click: *Open Browser*.
+- Easy convienent way to connect with potential buyers and sell their work. 
+- Ability to show their work
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+##### Sionnach Scenes is a great way to meet the needs of Photographer(s) because:
 
-A blue button should appear to click: *Make Public*,
+- Provides an way for potential customers to view, browse, order, and slightly customize the product
+- Design to keep potential customers engaged and easily through the purchase process.
 
-Another blue button should appear to click: *Open Browser*.
+---
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+##### User Goals are:
 
-## Updates Since The Instructional Video
+- To be able to search, browse, view, and order photography to decorate their homes. 
+ 
+##### Sionnach Scenes is a great way to meet the needs of potential customers because:
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+- Provides an way for potential customers to view, browse, order, and slightly customize the photographer's work.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+---
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+##### Developer Goals:
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+- This database provides a great opportunity to gain experience in new and familiar languages
+- Expand the developer’s portfolio.
+- Combine an interest in essential oils with a professional interest in webpage dev and des.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+ 
+---
+#### User Stories
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+##### As a Photographer, I want:
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+-
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+---
 
---------
+##### As an essential oil small business owner, I want:
 
-Happy coding!
+
+---
+---
+### Design Choices
+---
+---
+#### Fonts
+
+For my fonts, I 
+
+#### Icons
+
+The icons used were the Font Awesome icons 
+
+
+ 
+#### Styling
+
+
+---
+---
+ ### Wireframes
+ ---
+ ---
+ 
+ 
+The wireframes were created using [Balsamiq](https://balsamiq.com/) while planning this project. 
+
+ 
+---
+---
+
+## Features
+---
+---
+
+### Current Features
+---
+#### 1. Search Panel
+Friendly, easily usable, search panel that can be used to search for keywords from the description or the oil name. 
+
+#### 2. Collapsible List of Oils
+
+The collapsible list of oils on the main page provides the information for each oil in a standard, easy to read, format.
+
+#### 3. Navbar and Sidenav
+
+The top navigation bar and the side navigation, for smaller screens, allows for easy, convienent, and intuitive navigation for all screensizes. 
+
+#### 4. CRUD for Oils and Categories (but never in the diffuser)
+
+This site allows for users to create, retrieve, update and delete data from the database on Mongodb.
+
+---
+### Features Left to Implement
+---
+In future I would like this site to have:
+
+
+
+---
+---
+## Technologies Used
+---
+---
+
+#### Tools:
+
+-[Balsalmiq](https://balsamiq.com/) to make the wireframes
+-[PIP](https://pip.pypa.io/en/stable/installing/) for installation of tools needed in this project
+-[MongoDB](https://www.mongodb.com/cloud/atlas) for the database for this project
+-[GitHub](https://github.com/) to store and share all project code remotely
+-[Gitpod](https://www.gitpod.io/) to compile and create code
+-[Dillinger](https://dillinger.io/0) to make this readme file
+
+#### Libraries
+
+[JQuery] (https://jquery.com/) to simplify DOM manipulation
+[Materialize] (https://materializecss.com/) to simplify the structure of the website and make the website responsive easily
+[FontAwesome] (https://www.bootstrapcdn.com/fontawesome/) to provide icons for The Essential Oil Database
+[PyMongo] (https://api.mongodb.com/python/current/) to make communication between Python and MongoDB possible
+[Flask] (https://flask.palletsprojects.com/en/1.0.x/) to construct and render pages
+[Jinja] (http://jinja.pocoo.org/docs/2.10/) to simplify displaying data from the backend of this project smoothly and effectively in html
+[Heroku](https://dashboard.heroku.com/apps) to build, run, and operate applications entirely in the cloud. To allow Flask, Python, Jinja, Github to work together.
+
+#### Languages
+
+This project uses HTML, CSS, JavaScript and Python programming languages.
+
+---
+---
+## Testing
+---
+---
+
+Testing information can be found in separate [testing.md](https://github.com/Gwen-of-lynn/ ) file.
+
+---
+---
+## Deployment
+---
+---
+I deployed this page from Github to Heroku. Heroku has already made a video on how to do this, which I have linked below.
+
+[Heroku Deployment Methods] (https://www.youtube.com/watch?v=fW3yWiRd4E4)
+
+---
+---
+## Credits and Acknolodgements
+---
+---
+
+For this project I followed a tutorial from Code Institute for a Task Manager Database and adapted for my own database, styling and project needs. 
+
+For the error pages I used and adaped code from my previous milestone project, [The Essential Oil Database]() which was based on code from [this custom error pages site] (https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/).
+
+
+The structure of this readme is based on [A Greave’s Picflip and Familyhub readme files] (https://github.com/AJGreaves).
+ 
+##### Special thanks to:
+Aaron Sinnott, my mentor for this milestone project.
+
+ 
