@@ -50,7 +50,7 @@ The target audiences are photographer(s) people who would like to buy photograph
 
 - This database provides a great opportunity to gain experience in new and familiar languages
 - Expand the developer’s portfolio.
-- Combine an interest in essential oils with a professional interest in webpage dev and des.
+- Combine an interest in photography with a professional interest in webpage dev and des.
 
  
 ---
@@ -62,7 +62,7 @@ The target audiences are photographer(s) people who would like to buy photograph
 
 ---
 
-##### As an essential oil small business owner, I want:
+##### As a photography purchaser, I want:
 
 
 ---
@@ -102,20 +102,7 @@ The wireframes were created using [Balsamiq](https://balsamiq.com/) while planni
 
 ### Current Features
 ---
-#### 1. Search Panel
-Friendly, easily usable, search panel that can be used to search for keywords from the description or the oil name. 
 
-#### 2. Collapsible List of Oils
-
-The collapsible list of oils on the main page provides the information for each oil in a standard, easy to read, format.
-
-#### 3. Navbar and Sidenav
-
-The top navigation bar and the side navigation, for smaller screens, allows for easy, convienent, and intuitive navigation for all screensizes. 
-
-#### 4. CRUD for Oils and Categories (but never in the diffuser)
-
-This site allows for users to create, retrieve, update and delete data from the database on Mongodb.
 
 ---
 ### Features Left to Implement
