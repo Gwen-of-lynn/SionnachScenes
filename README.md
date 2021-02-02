@@ -3,7 +3,8 @@
 ### What does the fox see?
 ---
 ---
-Sionnach Scenes is a site selling scenic photography for wall art. Users can buy various sized prints with a selection of borders and framing options. There is an option of contacting the site for special requests.
+Sionnach Scenes is a site selling scenic photography for wall art. Users can buy various sized prints with a selection of borders and framing options. 
+There is an option of contacting the site for special requests.
 
 ---
 ---
@@ -14,7 +15,8 @@ Sionnach Scenes is a site selling scenic photography for wall art. Users can buy
 ---
 Sionnach Scenes allows the site owner, and photographer, a site to connect with their customer base.
 
-Sionnach Scenes is a store that allows the photographer to sell their work in an easy to navigate site for users. Photos are catogorized and searchable. Users can choose size, borders, frames, and quantities. 
+Sionnach Scenes is a store that allows the photographer to sell their work in an easy to navigate site for users. 
+Photos are catogorized and searchable. Users can choose size, borders, frames, and quantities. 
 
 ---
 #### Target Audience
@@ -128,12 +130,12 @@ In future I would like this site to have:
 
 #### Libraries
 
-[JQuery] (https://jquery.com/) to simplify DOM manipulation
-[Materialize] (https://materializecss.com/) to simplify the structure of the website and make the website responsive easily
-[FontAwesome] (https://www.bootstrapcdn.com/fontawesome/) to provide icons for The Essential Oil Database
-[PyMongo] (https://api.mongodb.com/python/current/) to make communication between Python and MongoDB possible
-[Flask] (https://flask.palletsprojects.com/en/1.0.x/) to construct and render pages
-[Jinja] (http://jinja.pocoo.org/docs/2.10/) to simplify displaying data from the backend of this project smoothly and effectively in html
+[JQuery](https://jquery.com/) to simplify DOM manipulation
+[Materialize](https://materializecss.com/) to simplify the structure of the website and make the website responsive easily
+[FontAwesome](https://www.bootstrapcdn.com/fontawesome/) to provide icons for The Essential Oil Database
+[PyMongo](https://api.mongodb.com/python/current/) to make communication between Python and MongoDB possible
+[Flask](https://flask.palletsprojects.com/en/1.0.x/) to construct and render pages
+[Jinja](http://jinja.pocoo.org/docs/2.10/) to simplify displaying data from the backend of this project smoothly and effectively in html
 [Heroku](https://dashboard.heroku.com/apps) to build, run, and operate applications entirely in the cloud. To allow Flask, Python, Jinja, Github to work together.
 
 #### Languages
@@ -155,7 +157,7 @@ Testing information can be found in separate [testing.md](https://github.com/Gwe
 ---
 I deployed this page from Github to Heroku. Heroku has already made a video on how to do this, which I have linked below.
 
-[Heroku Deployment Methods] (https://www.youtube.com/watch?v=fW3yWiRd4E4)
+[Heroku Deployment Methods](https://www.youtube.com/watch?v=fW3yWiRd4E4)
 
 ---
 ---
@@ -165,10 +167,10 @@ I deployed this page from Github to Heroku. Heroku has already made a video on h
 
 For this project I followed a tutorial from Code Institute for a Task Manager Database and adapted for my own database, styling and project needs. 
 
-For the error pages I used and adaped code from my previous milestone project, [The Essential Oil Database]() which was based on code from [this custom error pages site] (https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/).
+For the error pages I used and adaped code from my previous milestone project, [The Essential Oil Database]() which was based on code from [this custom error pages site](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/).
 
 
-The structure of this readme is based on [A Greave’s Picflip and Familyhub readme files] (https://github.com/AJGreaves).
+The structure of this readme is based on [A Greave’s Picflip and Familyhub readme files](https://github.com/AJGreaves).
  
 ##### Special thanks to:
 Aaron Sinnott, my mentor for this milestone project.
