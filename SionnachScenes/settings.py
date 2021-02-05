@@ -81,13 +81,13 @@ TEMPLATES = [
     },
 ]
 
-AUTHENTICATION_BACKENDS = [             # walkthrough has round brackets
+AUTHENTICATION_BACKENDS = (             # walkthrough has round brackets
     # Needed to login by username in Django admin, regardless of `allauth`
     'django.contrib.auth.backends.ModelBackend',
 
     # `allauth` specific authentication methods, such as login by e-mail
     'allauth.account.auth_backends.AuthenticationBackend',
-]
+)
 
 SITE_ID = 1
 
@@ -111,6 +111,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
+        # changed from BASE_DIR / to BASE_DIR, as the source from the tutorial has ,
     }
 }
 
