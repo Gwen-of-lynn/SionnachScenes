@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 
 import os
 
+import dj_database_url
+
 if os.path.exists("env.py"):
     import env
 
@@ -125,11 +127,11 @@ WSGI_APPLICATION = 'sionnachscenes.wsgi.application'
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-        # changed from BASE_DIR / to BASE_DIR, as the source from the tutorial has ,
-    }
+   'default': {
+       'ENGINE': 'django.db.backends.sqlite3',
+       'NAME': BASE_DIR / 'db.sqlite3',
+       # changed from BASE_DIR / to BASE_DIR, as the source from the tutorial has ,
+   }
 }
 
 
