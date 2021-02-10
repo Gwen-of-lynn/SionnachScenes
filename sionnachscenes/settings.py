@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
 import os
+# import os.path
+# added to trouble shoot "GET /static/admin/css/base.css HTTP/1.1" 404 179 and similar 404 179 errors
 
 import dj_database_url
 
@@ -177,8 +179,10 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
-STATIC_URL = '/static/'
-STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
+# STATIC_ROOT = ''
+# added to trouble shoot "GET /static/admin/css/base.css HTTP/1.1" 404 179 and similar 404 179 errors
+STATIC_URL = "/static/"
+STATICFILES_DIRS = (os.path.join(BASE_DIR, "static"),)
 
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
