@@ -10,16 +10,20 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.1/ref/settings/
 """
 
+from pathlib import Path
 import os
 # import os.path
 # added to trouble shoot "GET /static/admin/css/base.css HTTP/1.1" 404 179 and similar 404 179 errors
 
 import dj_database_url
 
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+# was present in later versions of settings in tutorial, not sure why it wasn't in mine
+
+
 if os.path.exists("env.py"):
     import env
 
-from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
