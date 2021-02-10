@@ -32,7 +32,7 @@ SECRET_KEY = 'h!9jb&atrc75op6+k4sa7-=&iqm^rq^@3$h#c4vy&28+nxtr76'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['ckz8780-boutique-ado.herokuapp.com', 'localhost']
 
 
 # Application definition
@@ -126,13 +126,18 @@ WSGI_APPLICATION = 'sionnachscenes.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/3.1/ref/settings/#databases
 
-DATABASES = {
-   'default': {
-       'ENGINE': 'django.db.backends.sqlite3',
-       'NAME': BASE_DIR / 'db.sqlite3',
-       # changed from BASE_DIR / to BASE_DIR, as the source from the tutorial has ,
-   }
-}
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
+    }
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        }
+    }
+# Previously had: changed from BASE_DIR / to BASE_DIR, as the source from the tutorial has ,
 
 
 # Password validation
