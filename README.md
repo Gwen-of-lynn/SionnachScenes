@@ -1,10 +1,22 @@
-# Sionnach Scenes
+# Dillinger
+
+# Sionnach Scenes, Silliness and Sundries
 ---
 ### What does the fox see?
 ---
 ---
-Sionnach Scenes is a site selling scenic photography for wall art. Users can buy various sized prints with a selection of borders and framing options. 
-There is an option of contacting the site for special requests.
+Sionnach Scenes, Silliness and Sundries is a combination of Sionnach Scenes and Sionnach Silliness and Sundries. 
+
+#### Sionnach Scenes  
+
+Sionnach Scenes is a story prompt site where users can add to the original story prompt and users can take turns telling the story in the same thread, or start a new thread that continues from the same original prompt and take turns telling a new version. 
+
+#### Sionnach Silliness and Sundries 
+
+Sionnach Silliness and Sundries is a satirical store jokingly selling things that either don’t really exist, or at least not in a way they can be packaged and sold. Many of the products are based on old jokes or puns.
+
+This store is for a project for school and won’t actually charge customers for it’s fictitious merchandise.
+
 
 ---
 ---
@@ -13,59 +25,59 @@ There is an option of contacting the site for special requests.
 ---
 ### Project Goals
 ---
-Sionnach Scenes allows the site owner, and photographer, a site to connect with their customer base.
+Sionnach Scenes, Silliness and Sundries allows the site owner a place to share and connect with others over story and light hearted humour.
 
-Sionnach Scenes is a store that allows the photographer to sell their work in an easy to navigate site for users. 
-Photos are catogorized and searchable. Users can choose size, borders, frames, and quantities. 
+The Scenes side will allow for imaginative banter and stories while the Silliness and Sundries will be joke products based mostly on old jokes or puns.
 
 ---
 #### Target Audience
 ---
 
-The target audiences are photographer(s) people who would like to buy photography to decorate their homes, and offices, and gift to others. 
+##### Sionnach Scenes
 
----
+The target audiences:
 
-##### Photographer(s) goals:
+Users:
+-	Writers who are...	
+	-	of all levels but mostly amatuer and aspiring
+-	looking for inspiration
+-	looking for a creative outlet
+-	looking for a writing community
 
-- Easy convienent way to connect with potential buyers and sell their work. 
-- Ability to show their work
+-	Readers who are... 
+	- 	interested in reading short stories
+	-	interested in reading ongoing projects
+	- 	interested in reading less professional writing
 
-##### Sionnach Scenes is a great way to meet the needs of Photographer(s) because:
+Site Owner:
+-	Readers or writers who are…
+-	interested in cultivating more of an interest in writing in themselves and 
+ 	others
+-	interested in getting their own ideas out there
+-	interested in building a community around writing
+-	interesting in reading others takes on story prompts
 
-- Provides an way for potential customers to view, browse, order, and slightly customize the product
-- Design to keep potential customers engaged and easily through the purchase process.
 
----
+###### Silliness and Sundries
 
-##### User Goals are:
 
-- To be able to search, browse, view, and order photography to decorate their homes. 
- 
-##### Sionnach Scenes is a great way to meet the needs of potential customers because:
+The target audiences:
 
-- Provides an way for potential customers to view, browse, order, and slightly customize the photographer's work.
+-	Users would be people who…
+	-	enjoy a good pun or satire
 
----
-
-##### Developer Goals:
-
-- This database provides a great opportunity to gain experience in new and familiar languages
-- Expand the developer’s portfolio.
-- Combine an interest in photography with a professional interest in webpage dev and des.
+-	Site Owner:
+    -	enjoys a good pun and satire
+    -	enjoys making people laugh
 
  
 ---
 #### User Stories
 
-##### As a Photographer, I want:
+To navigate to the User Stories please click the links below or find them in the [Documentation Folder]() for this page.
 
--
-
----
-
-##### As a photography purchaser, I want:
-
+- [Sionnach Scenes: User Stories]() 
+- [Sionnach Silliness and Sundries: User Stories]()
 
 ---
 ---
@@ -74,25 +86,26 @@ The target audiences are photographer(s) people who would like to buy photograph
 ---
 #### Fonts
 
-For my fonts, I 
+My fonts for this site are []() and []() and came from [Google Fonts](https://fonts.google.com/).
 
 #### Icons
 
-The icons used were the Font Awesome icons 
-
-
+The icons used were the [Font Awesome](https://fontawesome.com/) icons. 
  
 #### Styling
 
+Colours were chosen with the help of [Adobe Color](https://color.adobe.com/create/color-wheel).
 
 ---
 ---
  ### Wireframes
  ---
  ---
- 
- 
-The wireframes were created using [Balsamiq](https://balsamiq.com/) while planning this project. 
+
+To navigate to the Wireframes please click the links below or find them in the [Documentation Folder]() for this page.
+
+- [Sionnach Scenes: Wireframes]() 
+- [Sionnach Silliness and Sundries: Wireframes]()
 
  
 ---
@@ -111,7 +124,7 @@ The wireframes were created using [Balsamiq](https://balsamiq.com/) while planni
 ---
 In future I would like this site to have:
 
-
+If this site went live I would have the checkout in Silliness and Sundries as a donation page to a drop down list of charities.
 
 ---
 ---
@@ -123,7 +136,6 @@ In future I would like this site to have:
 
 -[Balsalmiq](https://balsamiq.com/) to make the wireframes
 -[PIP](https://pip.pypa.io/en/stable/installing/) for installation of tools needed in this project
--[MongoDB](https://www.mongodb.com/cloud/atlas) for the database for this project
 -[GitHub](https://github.com/) to store and share all project code remotely
 -[Gitpod](https://www.gitpod.io/) to compile and create code
 -[Dillinger](https://dillinger.io/0) to make this readme file
@@ -131,12 +143,13 @@ In future I would like this site to have:
 #### Libraries
 
 [JQuery](https://jquery.com/) to simplify DOM manipulation
-[Materialize](https://materializecss.com/) to simplify the structure of the website and make the website responsive easily
+[Bootstrap](https://getbootstrap.com/) to simplify the structure of the website and make the website responsive easily
 [FontAwesome](https://www.bootstrapcdn.com/fontawesome/) to provide icons for The Essential Oil Database
 [PyMongo](https://api.mongodb.com/python/current/) to make communication between Python and MongoDB possible
 [Flask](https://flask.palletsprojects.com/en/1.0.x/) to construct and render pages
 [Jinja](http://jinja.pocoo.org/docs/2.10/) to simplify displaying data from the backend of this project smoothly and effectively in html
 [Heroku](https://dashboard.heroku.com/apps) to build, run, and operate applications entirely in the cloud. To allow Flask, Python, Jinja, Github to work together.
+[Amazon Web Services S3](https://aws.amazon.com/) to store static and media files.
 
 #### Languages
 
@@ -148,7 +161,7 @@ This project uses HTML, CSS, JavaScript and Python programming languages.
 ---
 ---
 
-Testing information can be found in separate [testing.md](https://github.com/Gwen-of-lynn/ ) file.
+Testing information can be found in a separate [testing.md](https://github.com/Gwen-of-lynn/ ) file.
 
 ---
 ---
@@ -161,18 +174,18 @@ I deployed this page from Github to Heroku. Heroku has already made a video on h
 
 ---
 ---
-## Credits and Acknolodgements
+## Credits and Acknowledgements
 ---
 ---
 
-For this project I followed a tutorial from Code Institute for a Task Manager Database and adapted for my own database, styling and project needs. 
-
-For the error pages I used and adaped code from my previous milestone project, [The Essential Oil Database]() which was based on code from [this custom error pages site](https://flask.palletsprojects.com/en/1.1.x/patterns/errorpages/).
-
+For this project I followed a tutorial from Code Institute for Boutique Ado and adapted for my own ECommerce project, styling and project needs. 
 
 The structure of this readme is based on [A Greave’s Picflip and Familyhub readme files](https://github.com/AJGreaves).
  
 ##### Special thanks to:
 Aaron Sinnott, my mentor for this milestone project.
 
+##### Disclaimer:
+
+Sionnach Silliness and Sundries was a satirical page made for Code Institute’s Milestone Project 4 and won’t actually charge customers for it’s fictitious merchandise.
  
