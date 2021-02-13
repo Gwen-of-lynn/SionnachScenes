@@ -134,26 +134,27 @@ If this site went live I would have the checkout in Silliness and Sundries as a 
 
 #### Tools:
 
--[Balsalmiq](https://balsamiq.com/) to make the wireframes
--[PIP](https://pip.pypa.io/en/stable/installing/) for installation of tools needed in this project
--[GitHub](https://github.com/) to store and share all project code remotely
--[Gitpod](https://www.gitpod.io/) to compile and create code
--[Dillinger](https://dillinger.io/0) to make this readme file
+- [Balsalmiq](https://balsamiq.com/) to make the wireframes
+- [PIP](https://pip.pypa.io/en/stable/installing/) for installation of tools needed in this project
+- [GitHub](https://github.com/) to store and share all project code remotely
+- [Gitpod](https://www.gitpod.io/) to compile and create code
+- [Dillinger](https://dillinger.io/0) to make this readme file
+- [Stripe](https://stripe.com/en-ie) to accept and manage payments
+- [Amazon Web Services S3](https://aws.amazon.com/) to store static and media files
+- [Heroku](https://dashboard.heroku.com/apps) to build, run, and operate applications entirely in the cloud. To allow Flask, Python, Jinja, Github to work together
 
 #### Libraries
 
-[JQuery](https://jquery.com/) to simplify DOM manipulation
-[Bootstrap](https://getbootstrap.com/) to simplify the structure of the website and make the website responsive easily
-[FontAwesome](https://www.bootstrapcdn.com/fontawesome/) to provide icons for The Essential Oil Database
-[PyMongo](https://api.mongodb.com/python/current/) to make communication between Python and MongoDB possible
-[Flask](https://flask.palletsprojects.com/en/1.0.x/) to construct and render pages
-[Jinja](http://jinja.pocoo.org/docs/2.10/) to simplify displaying data from the backend of this project smoothly and effectively in html
-[Heroku](https://dashboard.heroku.com/apps) to build, run, and operate applications entirely in the cloud. To allow Flask, Python, Jinja, Github to work together.
-[Amazon Web Services S3](https://aws.amazon.com/) to store static and media files.
+- [JQuery](https://jquery.com/) to simplify DOM manipulation
+- [Bootstrap](https://getbootstrap.com/) to simplify the structure of the website and make the website responsive easily
+- [FontAwesome](https://www.bootstrapcdn.com/fontawesome/) to provide icons for The Essential Oil Database
+- [PyMongo](https://api.mongodb.com/python/current/) to make communication between Python and MongoDB possible
+- [Flask](https://flask.palletsprojects.com/en/1.0.x/) to construct and render pages
+- [Jinja](http://jinja.pocoo.org/docs/2.10/) to simplify displaying data from the backend of this project smoothly and effectively in html
 
 #### Languages
 
-This project uses HTML, CSS, JavaScript and Python programming languages.
+This project uses HTML, CSS, JavaScript, Django, and Python programming languages.
 
 ---
 ---
