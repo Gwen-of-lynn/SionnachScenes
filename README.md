@@ -142,6 +142,7 @@ If this site went live I would have the checkout in Silliness and Sundries as a 
 - [Stripe](https://stripe.com/en-ie) to accept and manage payments
 - [Amazon Web Services S3](https://aws.amazon.com/) to store static and media files
 - [Heroku](https://dashboard.heroku.com/apps) to build, run, and operate applications entirely in the cloud. To allow Flask, Python, Jinja, Github to work together
+- [Pin Clip Art](https://www.pinclipart.com/) used for royalty free clip art
 
 #### Libraries
 

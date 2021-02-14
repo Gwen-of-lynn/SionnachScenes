@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: #3d1302;
+    background: url('/media/styling/fox_background_right.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #ff671b;
