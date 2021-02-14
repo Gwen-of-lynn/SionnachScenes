@@ -3,7 +3,7 @@ html {
 }
 
 body {
-    background: url('/media/homepage_background_cropped.jpg') no-repeat center center fixed;
+    background: #3d1302;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #555;
@@ -28,49 +28,56 @@ body {
 }
 
 .shop-now-button {
-    background: black;
-    color: white;
+    background:#fee9d9;
+    color: #3d1302;
     min-width: 260px;
 }
 
-.btn-black {
-    background: black;
-    color: white;
+.btn-light {
+    background: #fee9d9;
+    color: #3d1302;
 }
 
-.btn-outline-black {
-    background: white;
-    color: black !important; /* use important to override link colors for <a> elements */
-    border: 1px solid black;
+.btn-outline-light {
+    background: #3d1302;
+    color:#fee9d9 !important; /* use important to override link colors for <a> elements */
+    border: 1px solid #ffd995;
 }
 
-.btn-outline-black:hover,
-.btn-outline-black:active,
-.btn-outline-black:focus {
-    background: black;
-    color: white !important;
+.btn-outline-light:hover,
+.btn-outline-light:active,
+.btn-outline-light:focus {
+    background: #fee9d9;
+    color: #3d1302 !important;
 }
+
 
 .shop-now-button:hover,
 .shop-now-button:active,
 .shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
-    color: white;
+.btn-light:hover,
+.btn-light:active,
+.btn-light:focus {
+    background:#fee9d9;
+    color: #3d1302;
 }
 
-.text-black {
-    color: #000 !important;
+
+.text-light {
+    color: #fee9d9 !important;
 }
 
 .border-black {
-    border: 1px solid black !important;
+    border: 1px solid #ffd995 !important;
 }
 
-.bg-black {
-    background: #000 !important;
+.text-dark {
+    color: #3d1302;
+}
+
+
+.bg-light {
+    background: #fee9d9 !important;
 }
 
 .overlay {
@@ -79,13 +86,13 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: white;
+	background: #3d1302;
 	z-index: -1;
 }
 
 a.category-badge > span.badge:hover {
-    background: #212529 !important;
-    color: #fff !important;
+    background: #fee9d9 !important;
+    color: #3d1302 !important;
 }
 
 .btt-button {
@@ -128,7 +135,7 @@ input[name='q']::placeholder {
     height: 0; 
     border-left: 4px solid transparent;
     border-right: 4px solid transparent; 
-    border-bottom: 10px solid black;
+    border-bottom: 10px solid #ffd995;
     position: absolute;
     top: -10px;
     right: 36px;
@@ -190,7 +197,7 @@ input[name='q']::placeholder {
 }
 
 .allauth-form-inner-content input {
-    border-color: #000;
+    border-color: #fee9d9;
     border-radius: 0;
 }
 
@@ -207,15 +214,15 @@ input[name='q']::placeholder {
 	/* btn */
 	display: inline-block;
     font-weight: 400;
-    color: #fff;
+    color: #3d1302;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #000;
-    border: 1px solid #000;
+    background-color: #fee9d9;
+    border: 1px solid #fee9d9;
     padding: .375rem .75rem;
     font-size: 1rem;
     line-height: 1.5;
@@ -227,9 +234,9 @@ input[name='q']::placeholder {
 
 .allauth-form-inner-content button:hover,
 .allauth-form-inner-content input[type='submit']:hover {	
-	color: #fff;
-    background-color: #222;
-    border-color: #222;
+	color: #3d1302;
+    background-color: #fee9d9;
+    border-color: #fee9d9;
 }
 
 .allauth-form-inner-content a {
@@ -290,7 +297,7 @@ input[name='q']::placeholder {
     }
 }
 
-    .display-4.logo-font.text-black {
+    .display-4.logo-font.text-light {
         font-size: 2rem;
     }
 
@@ -311,13 +318,13 @@ input[name='q']::placeholder {
         font-size: .9rem;
     }
 
-    .btn.btn-outline-black.rounded-0,
-    .btn.btn-black.rounded-0 {
+    .btn.btn-outline-light.rounded-0,
+    .btn.btn-light.rounded-0 {
         padding: .375rem .375rem;
     }
 
-    .btn.btn-outline-black.rounded-0.btn-lg,
-    .btn.btn-black.rounded-0.btn-lg {
+    .btn.btn-outline-light.rounded-0.btn-lg,
+    .btn.btn-light.rounded-0.btn-lg {
         padding: .375rem .375rem;
         font-size: .75rem;
     }
