@@ -6,7 +6,7 @@ body {
     background: #3d1302;
     background-size: cover;
     height: calc(100vh - 164px);
-    color: #555;
+    color: #ff671b;
     font-family: 'Lato';
 }
 
@@ -67,7 +67,11 @@ body {
     color: #fee9d9 !important;
 }
 
-.border-black {
+.text-medcol {
+    color: 	#ff671b !important;
+}
+
+.border-light {
     border: 1px solid #ffd995 !important;
 }
 
@@ -297,7 +301,7 @@ input[name='q']::placeholder {
     }
 }
 
-    .display-4.logo-font.text-light {
+    .display-4.logo-font.text-medcolht {
         font-size: 2rem;
     }
 
