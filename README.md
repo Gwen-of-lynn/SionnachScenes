@@ -1,5 +1,3 @@
-# Dillinger
-
 # Sionnach Scenes, Silliness and Sundries
 ---
 ### What does the fox see?
