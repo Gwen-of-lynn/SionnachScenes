@@ -1,15 +1,14 @@
 html {
     height: 100%;
-    background-color: #0b0706;
+    background: black;
 }
 
 body {
     /*background: url('/media/styling/fox_background_right.jpg') no-repeat center center fixed;*/
     background: black;
     background-size: cover;
-    /*height: calc(100vh - 164px);*/
-    /*color: #ff671b;*/
-    color: purple;
+    height: calc(100vh - 164px);
+    color: #ff671b;
     font-family: 'Lato';
     margin: 0;
 }
@@ -44,7 +43,7 @@ body {
 
 .btn-outline-light {
     background: #3d1302;
-    color:#fee9d9 /*!important*/; /* use important to override link colors for <a> elements */
+    color:#fee9d9 !important; /* use important to override link colors for <a> elements */
     border: 1px solid #ffd995;
 }
 
@@ -52,7 +51,7 @@ body {
 .btn-outline-light:active,
 .btn-outline-light:focus {
     background: #fee9d9;
-    color: #3d1302 /*!important*/;
+    color: #3d1302 !important;
 }
 
 
@@ -68,15 +67,15 @@ body {
 
 
 .text-light {
-    color: #fee9d9 /*!important*/;
+    color: #fee9d9 !important;
 }
 
 .text-medcol {
-    color: 	#ff671b /*!important*/;
+    color: 	#ff671b !important;
 }
 
 .border-light {
-    border: 1px solid #ffd995 /*!important*/;
+    border: 1px solid #ffd995 !important;
 }
 
 .text-dark {
@@ -85,7 +84,7 @@ body {
 
 
 .bg-light {
-    background: #fee9d9 /*!important*/;
+    background: #fee9d9 !important;
 }
 
 .overlay {
@@ -99,8 +98,8 @@ body {
 }
 
 a.category-badge > span.badge:hover {
-    background: #fee9d9 /*!important*/;
-    color: #3d1302 /*!important*/;
+    background: #fee9d9 !important;
+    color: #3d1302 !important;
 }
 
 .btt-button {
@@ -151,35 +150,35 @@ input[name='q']::placeholder {
 
 /* Convenience classes - colors copied from Bootstrap */
 .arrow-primary {
-    border-bottom-color: #007bff /*!important*/;
+    border-bottom-color: #007bff !important;
 }
 
 .arrow-secondary {
-    border-bottom-color: #6c757d /*!important*/;
+    border-bottom-color: #6c757d !important;
 }
 
 .arrow-success {
-    border-bottom-color: #28a745 /*!important*/;
+    border-bottom-color: #28a745 !important;
 }
 
 .arrow-danger {
-    border-bottom-color: #dc3545 /*!important*/;
+    border-bottom-color: #dc3545 !important;
 }
 
 .arrow-warning {
-    border-bottom-color: #ffc107 /*!important*/;
+    border-bottom-color: #ffc107 !important;
 }
 
 .arrow-info {
-    border-bottom-color: #17a2b8 /*!important*/;
+    border-bottom-color: #17a2b8 !important;
 }
 
 .arrow-light {
-    border-bottom-color: #f8f9fa /*!important*/;
+    border-bottom-color: #f8f9fa !important;
 }
 
 .arrow-dark {
-    border-bottom-color: #343a40 /*!important*/;
+    border-bottom-color: #343a40 !important;
 }
 
 .bag-notification-wrapper {
@@ -338,13 +337,6 @@ input[name='q']::placeholder {
     }
 
     .increment-qty, .decrement-qty {
-        padding: .25rem .5rem /*!important*/;
+        padding: .25rem .5rem !important;
     }
 
-
-    h1,
-    h2,
-    h3,
-    h4 {
-        color:fuchsia;
-    }

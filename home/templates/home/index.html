@@ -57,56 +57,68 @@
     <title>Sionnach Scenes and Sundries {% block extra_title %}{% endblock %}</title>
 </head>
 
-{% block content %}
-<div class="container h-100">
- <!---  <div class="row">
+<body class="my-5">
+    {% block content %}
+
+    <div class="container h-100">
+        <!---  <div class="row">
         <div class="col-12">
             <h1 class="text-light bg-dark text-center my-auto logo-font">Sionnach</h1>
         </div>
     </div>
- --->   
-    <div class="row h-100 bg-dark">
-        <!--h-100 refers to the height of the image, bootstrap-->
-        <div class="col-5 my-auto bg-dark">
-            <h1 class="display-4 logo-font text-medcol text-right">
-                Scenes
-            </h1>
-            <div class="div my-5 text-right">
-                <!-- my-5 ref margins bootstrap-->
-                <h4>
-                    <a href="{% url 'products' %}"
-                        class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Start Writing</a>
-                    <!--more bootstrap-->
-                </h4>
+ --->
+        <div class="row h-25 bg-dark">
+            <div class="col-12 my-auto">
+                <h1 class="display-4 logo-font text-medcol text-center align-bottom">
+                    Sionnach
+                </h1>
             </div>
         </div>
-        <div class="col-2 my-auto">
-            <h1 class="display-4 align-middle logo-font text-light text-center">
-                &
-            </h1>
-        </div>
-        <div class="col-5 my-auto bg-dark">
-            <h1 class="display-4 logo-font text-medcol">
-                Sundries
-            </h1>
-            <div class="div my-5">
-                <!-- mtext-medcolrgins bootstrap-->
-                <h4>
-                    <a href="{% url 'products' %}"
-                        class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Visit Store</a>
-                    <!--more bootstrap-->
-                </h4>
+        <div class="row h-75 bg-dark">
+            <!------           bg-dark-->
+            <!--h-100 refers to the height of the image, bootstrap-->
+            <div class="col-5 my-auto">
+                <!------           bg-dark-->
+                <h1 class="display-4 logo-font text-medcol text-right">
+                    Scenes
+                </h1>
+                <div class="div my-5 text-right">
+                    <!-- my-5 ref margins bootstrap-->
+                    <h4>
+                        <a href="{% url 'products' %}"
+                            class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Start Writing</a>
+                        <!--more bootstrap-->
+                    </h4>
+                </div>
+            </div>
+            <div class="col-2 my-auto">
+                <h1 class="display-4 align-middle logo-font text-light text-center">
+                    &
+                </h1>
+            </div>
+            <div class="col-5 my-auto">
+                <!------           bg-dark-->
+                <h1 class="display-4 logo-font text-medcol">
+                    Sundries
+                </h1>
+                <div class="div my-5">
+                    <!-- mtext-medcolrgins bootstrap-->
+                    <h4>
+                        <a href="{% url 'products' %}"
+                            class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Visit Store</a>
+                        <!--more bootstrap-->
+                    </h4>
+                </div>
             </div>
         </div>
     </div>
-</div>
-{% endblock %}
+    {% endblock %}
 
-{% block postloadjs %}
-<script type="text/javascript">
-    $('.toast').toast('show');
-</script>
-{% endblock %}
+    {% block postloadjs %}
+    <script type="text/javascript">
+        $('.toast').toast('show');
+    </script>
+    {% endblock %}
 
 
 </body>
