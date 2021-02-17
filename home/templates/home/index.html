@@ -23,8 +23,8 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
     <link rel="stylesheet" href="{% static 'css/base.css' %}">
-    <link rel="icon" href="/static/favicon/favicon.ico" type="image/x-icon"/>
-    <link rel="shortcut icon" href="/static/favicon/favicon.ico" type="image/x-icon"/>
+    <link rel="icon" href="/static/favicon/favicon.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/static/favicon/favicon.ico" type="image/x-icon" />
     {% endblock %}
 
     {% block extra_css %}
@@ -69,48 +69,37 @@
         </div>
     </div>
  --->
-        <div class="row h-25 bg-dark">
+        <div class="row h-50 bg-dark">
             <div class="col-12 my-auto">
-                <h1 class="display-4 logo-font text-medcol text-center align-bottom">
+                <h1 class="display-4 text-medcol text-center">
                     Sionnach
                 </h1>
             </div>
+            <div class="col-12 my-auto">
+                <h2 class="display-4 text-medcol text-center">
+                    Scenes   &  Sundries
+                </h2>
+            </div>
         </div>
-        <div class="row h-75 bg-dark">
+        <div class="row h-50 bg-dark">
             <!------           bg-dark-->
             <!--h-100 refers to the height of the image, bootstrap-->
-            <div class="col-5 my-auto">
-                <!------           bg-dark-->
-                <h1 class="display-4 logo-font text-medcol text-right">
-                    Scenes
-                </h1>
-                <div class="div my-5 text-right">
-                    <!-- my-5 ref margins bootstrap-->
-                    <h4>
-                        <a href="{% url 'storystarters' %}"
-                            class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Start Writing</a>
-                        <!--more bootstrap-->
-                    </h4>
-                </div>
+
+            <div class="col-6 my-5 text-right">
+                <!-- my-5 ref margins bootstrap-->
+                <h4>
+                    <a href="{% url 'storystarters' %}"
+                        class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Start Writing</a>
+                    <!--more bootstrap-->
+                </h4>
             </div>
-            <div class="col-2 my-auto">
-                <h1 class="display-4 align-middle logo-font text-light text-center">
-                    &
-                </h1>
-            </div>
-            <div class="col-5 my-auto">
-                <!------           bg-dark-->
-                <h1 class="display-4 logo-font text-medcol">
-                    Sundries
-                </h1>
-                <div class="div my-5">
-                    <!-- mtext-medcolrgins bootstrap-->
-                    <h4>
-                        <a href="{% url 'products' %}"
-                            class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Visit Store</a>
-                        <!--more bootstrap-->
-                    </h4>
-                </div>
+            <div class="col-6 my-5">
+                <!-- mtext-medcolrgins bootstrap-->
+                <h4>
+                    <a href="{% url 'products' %}"
+                        class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Visit Store</a>
+                    <!--more bootstrap-->
+                </h4>
             </div>
         </div>
     </div>
