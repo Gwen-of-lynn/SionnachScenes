@@ -10,7 +10,7 @@
             "category": 1,
             "rating": 4.2,
             "image_url": "",
-            "image": ""
+            "image": "acute_accent_a_wbg.jpg"
         }
     },
         {
@@ -18,13 +18,13 @@
         "model": "products.product",
         "fields": {
             "sku": "000003",
-            "name": "Reusable Spoon",
+            "name": "Silver Spoon",
             "description": " ",
             "price": 8.42,
             "category": 2,
             "rating": 4.2,
-            "image_url": "http://s7d9.scene7.com/is/image/JCPenney/DP0709201205510679M.tif?hei=380&amp;wid=380&op_usm=.4,.8,0,0&resmode=sharp2&op_usm=1.5,.8,0,0&resmode=sharp",
-            "image": ""
+            "image_url": "https://images.unsplash.com/photo-1588867729565-b593e81f7357?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8c3Bvb258ZW58MHx8MHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+            "image": "raul-angel-ph9GV_xQlY8-unsplash"
         }
     },
         {
@@ -32,13 +32,13 @@
         "model": "products.product",
         "fields": {
             "sku": "000004",
-            "name": "Disposible Spoon",
-            "description": "",
-            "price": 1.42,
+            "name": "Miscelaneous Spoon Bundle",
+            "description": "Random bundle of 10-15 spoons, approximately valuing €40",
+            "price": 30.00,
             "category": 2,
             "rating": 4.6,
-            "image_url": "",
-            "image": ""
+            "image_url": "https://images.unsplash.com/photo-1582828462913-ff94884827ba?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8c3Bvb258ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60",
+            "image": "gaelle-marcel-CkInCM8e1ig-unsplash"
         }
     }
 ]
