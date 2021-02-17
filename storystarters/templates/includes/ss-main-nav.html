@@ -1,0 +1,39 @@
+<div class="collapse navbar-collapse" id="main-nav">
+    <ul class="navbar-nav w-auto mx-auto">
+        <li class="nav-item d-block d-md-none">
+            <a class="logo-font font-weight-bold nav-link text-medcol mr-5" href="{% url 'home' %}" id="home-link">
+                Home
+            </a>
+        </li>                                                        <!--- needs a lot of reworking but so far so good I think-->
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-medcol mr-5" href="#" id="all-products-link"          
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">                       <!--change hrefs and ids make functionality function-->
+                All Posts
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Genre</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Author</a>
+                <a href="{% url 'products' %}" class="dropdown-item">All Posts</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-medcol mr-5" href="#" id="clothing-link"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Placeholder
+            </a>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="logo-font font-weight-bold nav-link text-medcol" href="#" id="specials-link" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Favorites
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="specials-link">
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">User Favorites</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Admin Favorites</a>
+            </div>
+        </li>
+    </ul>
+</div>

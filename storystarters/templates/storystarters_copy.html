@@ -1,7 +1,7 @@
+{% load static %}
+
 <!doctype html>
 <html lang="en">
-
-{% load static %}
 
 <head>
     {% block meta %}
@@ -56,62 +56,71 @@
     {% block extra_js %}
     {% endblock %}
 
-    <title>Sionnach Scenes and Sundries {% block extra_title %}{% endblock %}</title>
+    <title>Sionnach Scenes {% block extra_title %}{% endblock %}</title>
 </head>
 
-<body class="my-5">
-    {% block content %}
+{% block content %}
 
-    <div class="container h-100">
-        <!---  <div class="row">
-        <div class="col-12">
-            <h1 class="text-light bg-dark text-center my-auto logo-font">Sionnach</h1>
+<body>
+    <header class="masthead">
+        <div class="overlay">
+            <!-- </div>  -->
+            <div class="container">
+                <div class="row">
+                    <div class=" col-md-8 col-md-10 mx-auto">
+                        <div class="site-heading">
+                            <h3 class=" site-heading my-4 mt-3 text-white"> Welcome to my Sionnach Scenes</h3>
+                            <p class="text-light">Story Starter Blog &nbsp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+
+            <!-- Blog Entries Column -->
+            <div class="col-md-8 mt-3 left">
+                {% for post in post_list %}
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h2 class="card-title">{{ post.title }}</h2>
+                        <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
+
+                        <p class="card-text">{{post.content|safe|slice:":200" }}</p>
+                        <a href="{% url 'post_detail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
+                    </div>
+
+                </div>
+                {% endfor %}
+
+            </div>
+            {% block sidebar %}
+            {% include 'sidebar.html' %}
+            {% endblock sidebar %}
         </div>
     </div>
- --->
-        <div class="row h-50 bg-dark">
-            <div class="col-12 my-auto">
-                <h1 class="display-4 text-medcol text-center">
-                    Sionnach
-                </h1>
-            </div>
-            <div class="col-12 my-auto">
-                <h2 class="display-4 text-medcol text-center">
-                    Scenes   &  Sundries
-                </h2>
-            </div>
-        </div>
-        <div class="row h-50 bg-dark">
-            <!------           bg-dark-->
-            <!--h-100 refers to the height of the image, bootstrap-->
+    {% if is_paginated %}
+    <nav aria-label="Page navigation conatiner">
+        <!-- </nav>  -->
+        <ul class="pagination justify-content-center">
+            {% if page_obj.has_previous %}
+            <li><a href="?page={{ page_obj.previous_page_number }}" class="page-link">&laquo; PREV </a></li>
+            {% endif %}
+            {% if page_obj.has_next %}
+            <li><a href="?page={{ page_obj.next_page_number }}" class="page-link"> NEXT &raquo;</a></li>
 
-            <div class="col-sm-12 col-md-6 my-5 text-xs-center text-md-right">
-                <!-- my-5 ref margins bootstrap-->
-                <h4>                                                                                        <!--centering on small screens or add mini fox on right css -->
-                    <a href="{% url 'storystarters' %}"
-                        class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Start Writing</a>
-                    <!--more bootstrap-->
-                </h4>
-            </div>
-            <div class="col-sm-12 col-md-6 my-5 bg-dark text-xs-center text-md-left">
-                <!-- mtext-medcolrgins bootstrap-->
-                <h4>
-                    <a href="{% url 'products' %}"
-                        class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Visit Store</a>
-                    <!--more bootstrap-->
-                </h4>
-            </div>
-        </div>
+            {% endif %}
+        </ul>
+    </nav>
     </div>
-    {% endblock %}
-
+    {% endif %}
     {% block postloadjs %}
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
     {% endblock %}
-
-
 </body>
-
-</html>
+{%endblock%}
