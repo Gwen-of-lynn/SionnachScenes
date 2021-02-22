@@ -4,7 +4,7 @@ from .forms import CommentForm
 from django.shortcuts import render, get_object_or_404
 
 
-class PostList(generic.ListView):
+class PostList(generic.ListView):                                               # not sure what's supposed to go here
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "storystarters.html"
     paginate_by = 3

@@ -10,4 +10,5 @@ urlpatterns = [
     path("", views.PostList.as_view(), name="storystarters"),
     # path('<slug:slug>/', views.PostDetail.as_view(), name='post_detail'),
     path("<slug:slug>/", views.post_detail, name="post_detail"),
+    path('summernote/', include('django_summernote.urls')),
 ]

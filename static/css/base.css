@@ -19,14 +19,10 @@ body {
     display: inline-flex;
     justify-content: center;
     height: 1.5rem;
-    width: 1.5rem;
+    width: 1.5rem;                              /*--- chagne colour*/
 }
 
-.logo-font {
-    text-transform: uppercase;
-}
-
-.main-logo-link {
+.link {
     width: fit-content;
 }
 
@@ -93,7 +89,6 @@ body {
 	top: 0;
 	left: 0;
 	position: fixed;
-	background: #3d1302;
 	z-index: -1;
 }
 
