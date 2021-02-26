@@ -12,11 +12,11 @@ class PostList(generic.ListView):                                               
 
 # class PostDetail(generic.DetailView):
 #     model = Post
-#     template_name = 'post_detail.html'
+#     template_name = 'postdetail.html'
 
 
-def post_detail(request, slug):
-    template_name = "post_detail.html"
+def postdetail(request, slug):
+    template_name = "postdetail_extended.html"
     post = get_object_or_404(Post, slug=slug)
     comments = post.comments.filter(active=True).order_by("-created_on")
     new_comment = None
