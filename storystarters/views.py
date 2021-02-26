@@ -16,7 +16,7 @@ class PostList(generic.ListView):                                               
 
 
 def postdetail(request, slug):
-    template_name = "postdetail_extended.html"
+    template_name = "postdetail_extended.html"    # fix this line
     post = get_object_or_404(Post, slug=slug)
     comments = post.comments.filter(active=True).order_by("-created_on")
     new_comment = None
