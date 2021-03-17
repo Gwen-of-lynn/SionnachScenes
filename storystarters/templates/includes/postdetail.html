@@ -5,7 +5,7 @@
         <div class="col-md-8 card mb-4  mt-3 left  top">
             <div class="card-body">
                 <h1>{% block title %} {{ post.title }} {% endblock title %}</h1>
-                <p class="text-muted">{{ post.author }} | {{ post.created_on }}</p>              <!-- why is text muted?-->
+                <p class="text-muted">{{ post.author }} | {{ post.created_on }}</p>    
                 <p class="card-text ">{{ post.content | safe }}</p>
             </div>
         </div>
@@ -13,10 +13,7 @@
 
         <div class="col-md-8 card mb-4  mt-3 ">
             <div class="card-body">
-                <!-- comments -->
-<!--                 with comments.count as total_comments %}
-                <h2>{{ total_comments }} comments</h2>
--->
+
                 <p>
                     {% endwith %} {% for comment in comments %}
                 </p>

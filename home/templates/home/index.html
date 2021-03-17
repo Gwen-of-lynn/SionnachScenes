@@ -14,11 +14,6 @@
     {% endblock %}
 
     {% block corecss %}
-    <!-- Top link Latest compiled and minified CSS from https://getbootstrap.com/docs/3.3/getting-started/ which is not the one in the starter template
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">   -->
-
-    <!--the next link is copied from source code of "Boutique Ado" Code Institute's Full Stack example tutorial-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato&display=swap">
@@ -32,13 +27,6 @@
 
     {% block corejs %}
 
-    <!--
-    <script src="https://kit.fontawesome.com/c7be51ce30.js" crossorigin="anonymous"></script>
-    <!--This block is different from the tutorial but was copied with the bootstrap base html like the tutorial was
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
-        crossorigin="anonymous"></script>
--->
     <!--Copied from BA CI Source code-->
     <script src="https://kit.fontawesome.com/e9c73d7092.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"
@@ -63,12 +51,6 @@
     {% block content %}
 
     <div class="container h-100">
-        <!---  <div class="row">
-        <div class="col-12">
-            <h1 class="text-light bg-dark text-center my-auto logo-font">Sionnach</h1>
-        </div>
-    </div>
- --->
         <div class="row h-50 bg-dark">
             <div class="col-12 my-auto">
                 <h1 class="display-4 text-medcol text-center">
@@ -77,18 +59,13 @@
             </div>            
         </div>
         <div class="row h-50 bg-dark">
-            <!------           bg-dark-->
-            <!--h-100 refers to the height of the image, bootstrap-->
-
             <div class="col-sm-12 col-md-5 text-center text-md-right">
-                <!-- my-5 ref margins bootstrap-->
                 <h2 class="display-4 text-medcol text-center text-md-right">
                     Scenes
                 </h2>                
-                <h4>                                                                                        <!--centering on small screens or add mini fox on right css -->
+                <h4>                                                                                       
                     <a href="{% url 'storystarters' %}"
                         class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Start Writing</a>
-                    <!--more bootstrap-->
                 </h4>
             </div>
             <div class="col-sm-12 col-md-2 text-center">
@@ -97,14 +74,12 @@
                 </h2>
             </div>
             <div class="col-sm-12 col-md-5 bg-dark text-center text-md-left">
-                <!-- mtext-medcolrgins bootstrap-->
                 <h2 class="display-4 text-medcol text-center text-md-left">
                     Sundries
                 </h2>                
                 <h4>
                     <a href="{% url 'products' %}"
                         class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Visit Store</a>
-                    <!--more bootstrap-->
                 </h4>
             </div>
         </div>
