@@ -1,0 +1,6 @@
+#canvas {
+    margin: 0px;
+    background-color: black;
+    overflow: hidden;
+    height: inherit;
+}

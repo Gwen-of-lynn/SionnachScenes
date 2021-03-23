@@ -24,7 +24,9 @@
     {% endblock %}
 
     {% block extra_css %}
-    <link rel="stylesheet" href="{% static 'css/ss-base.css' %}">
+    <link rel="stylesheet" href="{% static 'css/storystarters.css' %}">
+    <link rel="stylesheet" href="{% static 'game/css/game.css' %}">
+    <link rel="stylesheet" href="{% static 'canvas/css/canvas.css' %}">
     {% endblock %}
 
     {% block corejs %}
@@ -90,9 +92,9 @@
         <script type="text/javascript">
             $('.toast').toast('show');
         </script>
+
+        <script src="{% static 'game/js/game.js' %}"></script>
+        <script src="{% static 'canvas/js/canvas.js' %}"></script>
         {% endblock %}
-
-
-
 
 </html>
