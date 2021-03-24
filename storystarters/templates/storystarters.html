@@ -1,33 +1,33 @@
 {% extends "storystarters-base.html" %}
 
 {% block content %}
+<div class="overlay"></div>
+<div class="container-fluid story-cont">
+    <div class="row">
 
-<div class="container story-cont">
-        <div class="row">
-
-            <!-- Blog Entries Column -->
-            <div class="col-md-2 canvas-col">
-                <canvas id="canvas" class="d-none d-lg-block"></canvas>
-                <!--Try putting canvas here -->
-            </div>
-            <div class="col-md-8 mt-3 blog-col">
-                {% for post in post_list %}
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <h2 class="card-title">{{ post.title }}</h2>
-                        <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
-
-                        <p class="card-text">{{post.content|safe|slice:":200" }}</p>
-                        <a href="{% url 'postdetail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
-                    </div>
-
-                </div>
-                {% endfor %}
-
-            </div>
-            <div class="col-md-2">
-            </div>
+        <!-- Blog Entries Column -->
+        <div class="col-md-2 canvas-col">
+            <canvas id="canvas" class="d-none d-lg-block"></canvas>
+            <!--Try putting canvas here -->
         </div>
+        <div class="col-md-8 mt-3 blog-col">
+            {% for post in post_list %}
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h2 class="card-title">{{ post.title }}</h2>
+                    <p class="card-text text-muted h6">{{ post.author }} | {{ post.created_on}} </p>
+
+                    <p class="card-text">{{post.content|safe|slice:":200" }}</p>
+                    <a href="{% url 'postdetail' post.slug  %}" class="btn btn-primary">Read More &rarr;</a>
+                </div>
+
+            </div>
+            {% endfor %}
+
+        </div>
+        <div class="col-md-2">
+        </div>
+    </div>
     <div class="row">
         <div class="col-md-2">
 

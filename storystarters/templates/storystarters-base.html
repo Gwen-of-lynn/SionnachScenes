@@ -51,36 +51,51 @@
 </head>
 
 <body>
-    <header class="container-fluid fixed-top">
+    <header class="container-fluid fixed-top border-bottom border-info">
         <div id="topnav" class="row bg-dark pt-lg-2 d-lg-flex">
-            <div class="col-4 my-auto py-1 py-lg-0 text-lg-left">
-                <a href="{% url 'home' %}" class="nav-link main-logo-link d-none d-md-block">
-                    <h2 class="text-medcol my-0"><strong>Sionnach Scenes</strong></h2>                
+            <div class="col-12 my-auto py-1 py-lg-0 text-lg-left">
+                <a href="{% url 'home' %}" class="nav-link main-logo-link">
+                    <h2 class="text-medcol my-0  d-none d-md-block"><strong>Sionnach Scenes <img
+                                src="/media/foxicon.png" class="fox-icon" alt="Fox icon Intro page button"></strong>
+                    </h2>
                 </a>
                 <a href="{% url 'home' %}" class="nav-link main-logo-link d-block d-md-none">
-                    <img src="/media/foxicon.png" alt="fox clip art">               
+                    <img src="/media/foxicon.png" class="fox-icon" alt="Fox icon Intro page button">
                 </a>
             </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
+        </div>
+        <div class="row bg-dark pt-lg-2 d-lg-flex">
+            <div class="col-4 my-auto py-1 py-lg-0 text-left">
+                <ul class="dd-menu-ul">
+                    {% include 'includes/main-dd-menu.html' %}
+                </ul>
             </div>
-            <div class="col-12 col-lg-4 my-auto py-1 py-lg-0 text-right">
+            <div class="col-4 text-center">
+                <a href="{% url 'storystarters' %}" class="main-header-link text-decoration-none">
+                    <h3 class="text-lightblu my-0"><strong>Story Starters</strong></h3>
+                </a>
+            </div>
+            <div class="col-4 my-auto py-1 py-lg-0 text-right">
                 <ul>
                     {% include 'includes/s-login-and-accts.html' %}
                 </ul>
             </div>
         </div>
 
-        <!-- Navigation -->
 
+        <!-- Navigation -->
+        <!--
         <div class="row bg-dark">
             <nav class="navbar navbar-expand-lg navbar-light w-100">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#main-nav"
                     aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                {% include 'includes/s-mobile-top-header.html' %}
+                {% include 'includes/s-mobile-top-header.html' 
             </nav>
         </div>
+-->
+    </header>
 
 
         {% block content %}
@@ -96,5 +111,6 @@
         <script src="{% static 'game/js/game.js' %}"></script>
         <script src="{% static 'canvas/js/canvas.js' %}"></script>
         {% endblock %}
+</body>
 
 </html>

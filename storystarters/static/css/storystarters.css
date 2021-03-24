@@ -16,3 +16,22 @@
 .container {
     max-width: 100%;
 }
+
+/*---------------------------------Header--*/
+
+.fox-icon {
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+.dd-menu-ul {
+    padding: 0;
+}
+
+.main-header-link {
+    text-decoration: none;
+}
+
+.main-header-link :hover {
+    text-decoration: none;
+}
