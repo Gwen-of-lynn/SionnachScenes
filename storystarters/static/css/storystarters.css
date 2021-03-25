@@ -17,6 +17,10 @@
     max-width: 100%;
 }
 
+.blog-row {
+    margin-top: 8rem;
+}
+
 /*---------------------------------Header--*/
 
 .fox-icon {
@@ -35,3 +39,4 @@
 .main-header-link :hover {
     text-decoration: none;
 }
+
