@@ -49,34 +49,34 @@
 
 <body class="my-5">
     {% block content %}
-
-    <div class="container h-100">
-        <div class="row h-50 bg-dark">
+    <div class="overlay"><canvas id="canvas" class="d-none d-lg-block"></canvas></div>
+    <div class="container h-100 intro-cont">
+        <div class="row h-50 bg-dark-trans">
             <div class="col-12 my-auto">
                 <h1 class="display-4 text-medcol text-center">
                     <strong>Sionnach</strong>
                 </h1>
-            </div>            
+            </div>
         </div>
-        <div class="row h-50 bg-dark">
-            <div class="col-sm-12 col-md-5 text-center text-md-right">
+        <div class="row h-50">
+            <div class="col-sm-12 col-md-5 text-center bg-dark-trans text-md-right">
                 <h2 class="display-4 text-medcol text-center text-md-right">
                     Scenes
-                </h2>                
-                <h4>                                                                                       
+                </h2>
+                <h4>
                     <a href="{% url 'storystarters' %}"
                         class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Start Writing</a>
                 </h4>
             </div>
-            <div class="col-sm-12 col-md-2 text-center">
+            <div class="col-sm-12 col-md-2 text-center bg-dark-trans">
                 <h2 class="display-4 text-medcol text-center">
                     &
                 </h2>
             </div>
-            <div class="col-sm-12 col-md-5 bg-dark text-center text-md-left">
+            <div class="col-sm-12 col-md-5 text-center text-md-left bg-dark-trans">
                 <h2 class="display-4 text-medcol text-center text-md-left">
                     Sundries
-                </h2>                
+                </h2>
                 <h4>
                     <a href="{% url 'products' %}"
                         class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Visit Store</a>
@@ -90,6 +90,7 @@
     <script type="text/javascript">
         $('.toast').toast('show');
     </script>
+    <script src="{% static 'canvas/js/canvas.js' %}"></script>
     {% endblock %}
 
 

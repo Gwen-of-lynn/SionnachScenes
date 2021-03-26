@@ -4,8 +4,7 @@ html {
 }
 
 body {
-    /*background: url('/media/styling/fox_background_right.jpg') no-repeat center center fixed;*/
-    background: black;
+    background: #00000000;    /*fixing a tendency towards a white background when it's removed*/
     background-size: cover;
     height: calc(100vh - 164px);
     color: #ff671b;
@@ -19,7 +18,7 @@ body {
     display: inline-flex;
     justify-content: center;
     height: 1.5rem;
-    width: 1.5rem;                              /*--- chagne colour*/
+    width: 1.5rem;                             
 }
 
 .link {
@@ -81,7 +80,6 @@ body {
 .text-dark {
     color: #3d1302;
 }
-
 
 .bg-light {
     background: #fee9d9 !important;
@@ -185,6 +183,28 @@ input[name='q']::placeholder {
     overflow-x: hidden;
     overflow-y: auto;
 }
+/*--------------------------------- Header and intro */
+
+.bg-dark-trans {
+    background-color: #343a40ab;
+}
+
+.fox-icon {
+    height: 1.75rem;
+    width: 1.75rem;
+}
+
+.dd-menu-ul {
+    padding: 0;
+}
+
+.main-header-link {
+    text-decoration: none;
+}
+
+.main-header-link :hover {
+    text-decoration: none;
+}
 
 /*--------------------------------- Story Starters */
 
@@ -197,17 +217,40 @@ input[name='q']::placeholder {
     padding: 0;
 }
 
+.blog-col {
+    background-color: #0000008a;
+}
+
+/*--
+.container {
+    max-width: 100%;
+}
+
+--*/
+
+.blog-row {
+    margin-top: 8rem;
+}
+
+/*---------------------------------Canvas  */
+
+#canvas {
+    margin: 0px;
+    background-color: black;
+    overflow: hidden;
+    height: inherit;
+}
 
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
-
+/*--
 @media (min-width: 1200px) {
   .container {
     max-width: 100%;
   }
 }
-
+--*/
 
 /* Allauth form formatting */
 
@@ -300,6 +343,10 @@ input[name='q']::placeholder {
         left: 0;
         z-index: 1030;
     }
+
+    .intro-cont {
+    max-width: 70%;
+}
 
     .header-container {
         padding-top: 164px;
