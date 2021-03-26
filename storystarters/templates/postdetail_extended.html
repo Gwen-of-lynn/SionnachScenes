@@ -1,8 +1,8 @@
 {% extends 'storystarters-base.html' %} {% block content %}
 {% load crispy_forms_tags %}
-
+<div class="overlay"><canvas id="canvas" class="d-none d-lg-block"></canvas></div>
 <div class="container">
-    <div class="row">
+    <div class="row blog-row">
         <div class="col-md-8 card mb-4  mt-3 left  top">
             <div class="card-body">
                 <h1>{% block title %} {{ post.title }} {% endblock title %}</h1>
@@ -20,7 +20,7 @@
                 <p>
                     {% for comment in comments %}
                 </p>
-
+<!-- consider putting in message with if statement if no comments already-->
                 <div class="comments" style="padding: 10px;">
                     <p class="font-weight-bold">
                         {{ comment.name }}
