@@ -403,3 +403,22 @@ input[name='q']::placeholder {
     a :hover {
         color: #25adbb;
     }
+
+    /*-----------------------------------Left side Drop down menu--*/
+
+    .dd-menu {
+        background-color: #25adbb;
+        list-style-type: none;
+        border-color: orange;
+        border:2px;
+    }
+
+        .dd-menu :hover{
+        background-color: #ffffff;
+        list-style-type: none;
+        color: #17a2b8;
+    }
+
+    .dropdown-menu {
+        background-color: #ff671b80;
+    }

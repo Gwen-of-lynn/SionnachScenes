@@ -1,0 +1,31 @@
+<li class="list-inline-item dropdown">
+    <a class="text-lightblu nav-link" href="#" id="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <div class="text-center">
+            <div><i class="fas fa-bars fa-lg"></i></div>
+            <h4 class="my-0 d-none d-md-block">Menu</h4>
+        </div>
+    </a>
+    <div class="dropdown-menu border-0">
+        <ul>
+            <li class="dd-menu text-center">
+                <hr>
+                <a href="{% url 'storystarters' %}" class="dropdown-item"><strong><h3>Story Starters</h3></strong></a>
+                <hr>
+                <a href="{% url 'products' %}" class="dropdown-item"><strong><h3>Sundries</h3></strong></a>
+                <hr>
+                {% if request.user.is_authenticated %}
+                {% if request.user.is_superuser %}
+                <a href="#" class="dropdown-item"><h4>Add Post</h4><em>(Coming soon)</em></a>
+                <hr>
+                <a href="{% url 'add_product' %}" class="dropdown-item"><h4>Add Product</h4></a>
+                <hr>
+                {% endif %}
+                {% else %}
+                <hr>
+                {% endif %}
+                <h5>Please enjoy the Silliness!</h5>
+
+            </li>
+        </ul>
+    </div>
+</li>
