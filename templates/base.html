@@ -48,7 +48,7 @@
 <body>
     <header class="container-fluid fixed-top border-bottom border-info">
         <div id="topnav" class="row bg-dark-trans pt-lg-2 d-lg-flex">
-            <div class="col-12 my-auto py-1 py-lg-0 text-lg-left">
+            <div class="col-6 my-auto py-1 py-lg-0 text-lg-left">
                 <a href="{% url 'home' %}" class="nav-link main-logo-link">
                     <h2 class="text-medcol my-0  d-none d-md-block"><strong>Sionnach Scenes <img
                                 src="/media/foxicon.png" class="fox-icon" alt="Fox icon Intro page button"></strong>
@@ -56,6 +56,25 @@
                 </a>
                 <a href="{% url 'home' %}" class="nav-link main-logo-link d-block d-md-none">
                     <img src="/media/foxicon.png" class="fox-icon" alt="Fox icon Intro page button">
+                </a>
+            </div>
+            <div class="col-6 my-auto text-right">
+                <a class="{% if grand_total %} text-medcol font-weight-bold{% else %}text-medcol{% endif %} nav-link d-block d-md-none text-right"
+                    href="{% url 'view_bag' %}">
+                    <div class="text-center">
+                        <ul class="bag-ul">
+                            <li><i class="fas fa-shopping-bag fa-md"></i></li>
+                            <li>
+                                <p class="my-0">
+                                    {% if grand_total %}
+                                    ${{ grand_total|floatformat:2 }}
+                                    {% else %}
+                                    $0.00
+                                    {% endif %}
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
                 </a>
             </div>
         </div>
@@ -72,7 +91,22 @@
             </div>
             <div class="col-4 my-auto py-1 py-lg-0 text-right">
                 <ul>
-                    {% include 'includes/s-login-and-accts.html' %}
+                    {% include 'includes/login-and-accts.html' %}
+                    <li class="list-inline-item">
+                        <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-medcol{% endif %} nav-link d-none d-md-block"
+                            href="{% url 'view_bag' %}">
+                            <div class="text-center">
+                                <div><i class="fas fa-shopping-bag fa-lg"></i></div>
+                                <p class="my-0">
+                                    {% if grand_total %}
+                                    ${{ grand_total|floatformat:2 }}
+                                    {% else %}
+                                    $0.00
+                                    {% endif %}
+                                </p>
+                            </div>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>

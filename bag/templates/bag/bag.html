@@ -11,18 +11,18 @@
 {% endblock %}
 
 {% block content %}
-<div class="overlay"></div>
+<div class="overlay"><canvas id="canvas" class="d-none d-lg-block"></canvas></div>
 <div class="container mb-2">
-    <div class="row">
-        <div class="col">
+    <div class="row card">
+        <div class="col card-body">
             <hr>
             <h2 class="mb-4">Shopping Bag</h2>
             <hr>
         </div>
     </div>
 
-    <div class="row">
-        <div class="col">
+    <div class="row card bag-card">
+        <div class="col card-body">
             {% if bag_items %}
             <div class="d-block d-md-none">
                 <div class="row">
