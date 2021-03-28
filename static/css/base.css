@@ -244,38 +244,9 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-.allauth-form-inner-content button,
-.allauth-form-inner-content input[type='submit'] {
-	/* btn */
-	display: inline-block;
-    font-weight: 400;
-    color: black;
-    text-align: center;
-    vertical-align: middle;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    background-color: #17a2b8;
-    border: 1px solid #fee9d9;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: 0;
 
     /* standard bootstrap btn transitions */
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
-.allauth-form-inner-content button:hover,
-.allauth-form-inner-content input[type='submit']:hover {	
-	color: #3d1302;
-    background-color: #fee9d9;
-    border-color: #fee9d9;
-}
-
-.allauth-form-inner-content a {
-	color: #17a2b8; /* text-info */
 }
 
 /* Product Form */
@@ -357,13 +328,13 @@ input[name='q']::placeholder {
     font-size: .9rem;
 }
 
-.btn.btn-info.rounded-0,
-.btn.btn-light.rounded-0 {
+.btn.btn-info.,
+.btn.btn-info. {
     padding: .375rem .375rem;
 }
 
-.btn.btn-info.rounded-0.btn-lg,
-.btn.btn-light.rounded-0.btn-lg {
+.btn.btn-info..btn-lg,
+.btn.btn-info..btn-lg {
     padding: .375rem .375rem;
     font-size: .75rem;
 }
@@ -395,3 +366,8 @@ a :hover {
     background-color: #ff671b80;
 }
 
+/*-------------------------------------Checkout----*/
+
+.checkout-info {
+    background-color: #fff; 
+}

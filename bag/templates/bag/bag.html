@@ -13,10 +13,10 @@
 {% block content %}
 <div class="overlay"><canvas id="canvas" class="d-none d-lg-block"></canvas></div>
 <div class="container mb-2">
-    <div class="row card">
-        <div class="col card-body">
+    <div class="row card mb-4 mt-3">
+        <div class="col card-body text-center">
             <hr>
-            <h2 class="mb-4">Shopping Bag</h2>
+            <h2>Shopping Bag</h2>
             <hr>
         </div>
     </div>
@@ -58,7 +58,7 @@
                     </div>
                 </div>
                 {% endfor %}
-                <div class="btt-button shadow-sm rounded-0 border border-light">
+                <div class="btt-button shadow-sm  border border-light">
                     <a class="btt-link d-flex h-100">
                         <i class="fas fa-arrow-up text-medcol mx-auto my-auto"></i>
                     </a>
@@ -109,7 +109,7 @@
             </div>
             {% else %}
             <p class="lead mb-5">Your bag is empty.</p>
-            <a href="{% url 'products' %}" class="btn btn-info rounded-0 btn-lg">
+            <a href="{% url 'products' %}" class="btn btn-info  btn-lg">
                 <span class="icon">
                     <i class="fas fa-chevron-left"></i>
                 </span>
