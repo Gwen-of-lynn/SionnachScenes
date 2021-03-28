@@ -25,42 +25,6 @@ body {
     width: fit-content;
 }
 
-.shop-now-button {
-    background:#fee9d9;
-    color: #3d1302;
-    min-width: 260px;
-}
-
-.btn-light {
-    background: #fee9d9;
-    color: #3d1302;
-}
-
-.btn-outline-light {
-    background: #3d1302;
-    color:#fee9d9 !important; /* use important to override link colors for <a> elements */
-    border: 1px solid #ffd995;
-}
-
-.btn-outline-light:hover,
-.btn-outline-light:active,
-.btn-outline-light:focus {
-    background: #fee9d9;
-    color: #3d1302 !important;
-}
-
-
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-light:hover,
-.btn-light:active,
-.btn-light:focus {
-    background:#fee9d9;
-    color: #3d1302;
-}
-
-
 .text-light {
     color: #fee9d9 !important;
 }
@@ -210,6 +174,10 @@ input[name='q']::placeholder {
     list-style-type: none;
 }
 
+.btn-intro {
+    min-width: 250px;
+}
+
 /*--------------------------------- Story Starters */
 
 .story-cont {
@@ -281,14 +249,14 @@ input[name='q']::placeholder {
 	/* btn */
 	display: inline-block;
     font-weight: 400;
-    color: #3d1302;
+    color: black;
     text-align: center;
     vertical-align: middle;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    background-color: #fee9d9;
+    background-color: #17a2b8;
     border: 1px solid #fee9d9;
     padding: .375rem .75rem;
     font-size: 1rem;
@@ -389,12 +357,12 @@ input[name='q']::placeholder {
     font-size: .9rem;
 }
 
-.btn.btn-outline-light.rounded-0,
+.btn.btn-info.rounded-0,
 .btn.btn-light.rounded-0 {
     padding: .375rem .375rem;
 }
 
-.btn.btn-outline-light.rounded-0.btn-lg,
+.btn.btn-info.rounded-0.btn-lg,
 .btn.btn-light.rounded-0.btn-lg {
     padding: .375rem .375rem;
     font-size: .75rem;
@@ -426,3 +394,4 @@ a :hover {
 .dropdown-menu {
     background-color: #ff671b80;
 }
+
