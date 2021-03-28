@@ -185,26 +185,21 @@ input[name='q']::placeholder {
     margin: 0;
 }
 
-.canvas-col {
-    padding: 0;
-}
-
 .blog-col {
     background-color: #0000008a;
 }
-
-/*--
-.container {
-    max-width: 100%;
-}
-
---*/
 
 .blog-row {
     margin-top: 8rem;
 }
 
 /*---------------------------------Canvas  */
+/*---------------------------------//Based on https://codepen.io/b4rb4tron/pen/wjyXNJ */
+
+
+.canvas-col {
+    padding: 0;
+}pip2
 
 #canvas {
     margin: 0px;
@@ -214,15 +209,6 @@ input[name='q']::placeholder {
 }
 
 /* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
-/*--
-@media (min-width: 1200px) {
-  .container {
-    max-width: 100%;
-  }
-}
---*/
 
 /* Allauth form formatting */
 

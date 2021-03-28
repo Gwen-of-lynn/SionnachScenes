@@ -1,4 +1,4 @@
-console.log("Hello World");
+//Based on https://codepen.io/b4rb4tron/pen/wjyXNJ
 
 var canvas = document.getElementById("canvas");
 var c = canvas.getContext("2d");
