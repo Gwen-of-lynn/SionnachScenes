@@ -12,10 +12,10 @@
 {% endif %}<br>
 {{ widget.input_text }}
 {% endif %}
-<span class="btn btn-file text-center">
-    Select Image <input id="new-image" class="" type="{{ widget.type }}" name="{{ widget.name }}"
+
+<input class="btn-info text-black" id="new-image" class="" type="{{ widget.type }}" name="{{ widget.name }}"
         {% include "django/forms/widgets/attrs.html" %}>
-</span>
+
 <strong>
     <p class="text-danger" id="filename"></p>
 </strong>
