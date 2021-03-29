@@ -251,7 +251,7 @@ input[name='q']::placeholder {
     opacity: 0;
     cursor: pointer;
     background-color: pink!important;
-    border-radius: 5%;
+    border: 10px;
     border-color: orange;
 }
 
