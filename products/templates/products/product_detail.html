@@ -12,8 +12,8 @@
 {% block content %}
 <div class="overlay"><canvas id="canvas" class="d-none d-lg-block"></canvas></div>
 <div class="container-fluid">
-    <div class="row card">
-        <div class="col-12 col-md-6 col-lg-4 offset-lg-2 card-body">
+    <div class="row">
+        <div class="col-12 col-md-6 col-lg-4 offset-lg-2 mt-4 mb-3">
             <div class="image-container my-5">
                 {% if product.image %}
                 <a href="{{ product.image.url }}" target="_blank">
@@ -27,7 +27,7 @@
             </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4">
-            <div class="product-details-container mb-5 mt-md-5">
+            <div class="product-details-container mb-5 mt-md-5 card py-3">
                 <p class="mb-0">{{ product.name }}</p>
                 <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
                 {% if product.category %}
