@@ -218,11 +218,6 @@ input[name='q']::placeholder {
     color: #6c757d; /* text-secondary */
 }
 
-.allauth-form-inner-content input {
-    border-color: #fee9d9;
-    border-radius: 0;
-}
-
 .allauth-form-inner-content label:not([for='id_remember']) {
     display: none;
 }
@@ -286,7 +281,6 @@ input[name='q']::placeholder {
     }
 }
 
-/* pad the top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
     .header-container {
         padding-top: 116px;
