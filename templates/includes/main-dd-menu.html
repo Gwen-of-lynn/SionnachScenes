@@ -9,13 +9,13 @@
         <ul>
             <li class="dd-menu text-center">
                 <hr>
-                <a href="{% url 'storystarters' %}" class="dropdown-item"><strong><h3>Story Starters</h3></strong></a>
+                <a href="{% url 'storystarters' %}" class="dropdown-item"><strong><h3>Stories</h3></strong></a>
                 <hr>
                 <a href="{% url 'products' %}" class="dropdown-item"><strong><h3>Sundries</h3></strong></a>
                 <hr>
                 {% if request.user.is_authenticated %}
                 {% if request.user.is_superuser %}
-                <a href="#" class="dropdown-item"><h4>Add Post</h4><em>(Coming soon)</em></a>
+                <a href="#" class="dropdown-item"><h4>Add Story</h4><em>(Coming soon)</em></a>
                 <hr>
                 <a href="{% url 'add_product' %}" class="dropdown-item"><h4>Add Product</h4></a>
                 <hr>
