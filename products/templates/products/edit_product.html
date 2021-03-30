@@ -21,7 +21,7 @@
     </div>
 
     <div class="row justify-content-center">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-md-6 card h-100 border-0 bg-dark-trans mb-4">
             <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2"
                 enctype="multipart/form-data">
                 {% csrf_token %}
