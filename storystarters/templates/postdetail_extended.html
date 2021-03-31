@@ -17,7 +17,6 @@
                 <!-- comments -->
                 <p>
                     {% for comment in comments %}
-                    {% if comment %}
                 </p>
                 <div class="comments" style="padding: 10px;">
                     <p class="font-weight-bold">
@@ -28,16 +27,8 @@
                     </p>
                     {{ comment.body | linebreaks }}
                 </div>
-                {% else %}
-
-                <div class="comments" style="padding: 10px;">
-                    <p class="text-muted font-weight-normal">
-                        Be first to add to the story!
-                    </p>
-                </div>
-                {% endif %}
-
                 {% endfor %}
+
             </div>
         </div>
         <div class="col-md-8 card mb-4  mt-3 ">
@@ -57,7 +48,7 @@
             </div>
         </div>
         <div class="col-md-8 mb-3 text-center">
-            <a href="{% url 'storystarters' %}" class="btn btn-info">Return to Story Starters</a>
+            <a href="{% url 'storystarters' %}" class="btn btn-info">Return to Stories</a>
         </div>
 
     </div>
