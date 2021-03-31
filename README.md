@@ -1,4 +1,4 @@
-# Sionnach Scenes: Stories and Sundries
+# [Sionnach Scenes: Stories and Sundries](https://sionnachscenes.herokuapp.com/)
 ---
 ### What does the fox see?
 ---
@@ -347,7 +347,7 @@ This project uses HTML, CSS, JavaScript, Django, and Python programming language
 ---
 ---
 
-Testing information can be found in a separate [testing.md](https://github.com/Gwen-of-lynn/ ) file.
+Testing information can be found in a separate [testing.md](https://github.com/Gwen-of-lynn/sionnachscenes/blob/master/documentation/testing.md) file.
 
 ---
 ---

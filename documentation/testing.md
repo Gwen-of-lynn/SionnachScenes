@@ -1,10 +1,9 @@
 # Sionnach Scenes
 
-[Sionnach Scenes](https://sionnachscenes.herokuapp.com/) can be found here.
-[Sionnach Scenes Repository](https://github.com/Gwen-of-lynn/sionnachscenes) can be found here. 
-[Sionnach Scenes README](https://github.com/Gwen-of-lynn/sionnachscenes/blob/master/README.md) can be found here.
+- [Sionnach Scenes](https://sionnachscenes.herokuapp.com/) can be found here.
+- [Sionnach Scenes Repository](https://github.com/Gwen-of-lynn/sionnachscenes) can be found here. 
+- [Sionnach Scenes README](https://github.com/Gwen-of-lynn/sionnachscenes/blob/master/README.md) can be found here.
 
----
 ---
 ---
 ## Automated Testing
