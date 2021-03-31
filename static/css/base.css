@@ -307,17 +307,6 @@ input[name='q']::placeholder {
     font-size: .9rem;
 }
 
-.btn.btn-info.,
-.btn.btn-info. {
-    padding: .375rem .375rem;
-}
-
-.btn.btn-info..btn-lg,
-.btn.btn-info..btn-lg {
-    padding: .375rem .375rem;
-    font-size: .75rem;
-}
-
 .increment-qty, .decrement-qty {
     padding: .25rem .5rem !important;
 }
