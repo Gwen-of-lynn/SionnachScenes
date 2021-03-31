@@ -16,11 +16,10 @@
             <div class="card-body">
                 <!-- comments -->
 
-
                 <p>
-                    {% for comment in comments %}
+                    <!--for comment in comments %}-->
                 </p>
-<!-- consider putting in message with if statement if no comments already-->
+                {% if comments|length > 1 %}
                 <div class="comments" style="padding: 10px;">
                     <p class="font-weight-bold">
                         {{ comment.name }}
@@ -31,7 +30,16 @@
                     {{ comment.body | linebreaks }}
                 </div>
 
-                {% endfor %}
+                {% else %}
+
+                <div class="comments" style="padding: 10px;">
+                    <p class="text-muted font-weight-normal">
+                        Be first to add to the story!
+                    </p>
+                </div>
+                {% endif %}
+
+                <!-- endfor %}-->
             </div>
         </div>
         <div class="col-md-8 card mb-4  mt-3 ">
@@ -41,7 +49,7 @@
                     Your comment is awaiting moderation
                 </div>
                 {% else %}
-                <h3>Leave a comment</h3>
+                <h3>Add to the story!</h3>
                 <form method="post" style="margin-top: 1.3em;">
                     {{ comment_form | crispy }}
                     {% csrf_token %}
