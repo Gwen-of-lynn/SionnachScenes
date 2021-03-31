@@ -355,3 +355,10 @@ a :hover {
 .checkout-info {
     background-color: #fff; 
 }
+
+/*-------------------------------------Product images-*/
+
+.prod-img {
+    height: 400px;
+    width: 400px;
+}
