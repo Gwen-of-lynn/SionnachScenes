@@ -226,11 +226,6 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
-
-    /* standard bootstrap btn transitions */
-    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-}
-
 /* Product Form */
 
 .btn-file {
