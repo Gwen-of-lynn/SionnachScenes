@@ -17,9 +17,9 @@
                 <!-- comments -->
 
                 <p>
-                    <!--for comment in comments %}-->
+                    {% for comment in comments %}
                 </p>
-                {% if comments|length > 1 %}
+                
                 <div class="comments" style="padding: 10px;">
                     <p class="font-weight-bold">
                         {{ comment.name }}
@@ -30,16 +30,7 @@
                     {{ comment.body | linebreaks }}
                 </div>
 
-                {% else %}
-
-                <div class="comments" style="padding: 10px;">
-                    <p class="text-muted font-weight-normal">
-                        Be first to add to the story!
-                    </p>
-                </div>
-                {% endif %}
-
-                <!-- endfor %}-->
+                {% endfor %}
             </div>
         </div>
         <div class="col-md-8 card mb-4  mt-3 ">
