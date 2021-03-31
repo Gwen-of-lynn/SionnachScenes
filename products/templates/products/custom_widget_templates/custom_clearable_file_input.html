@@ -1,7 +1,7 @@
 {% if widget.is_initial %}
 <p>{{ widget.initial_text }}:</p>
 <a href="{{ MEDIA_URL }}{{ widget.value.url }}"> <img width="96" height="96" class="rounded shadow-sm"
-        src="{{ MEDIA_URL }}{{ widget.value.url }}">
+        src="{{ MEDIA_URL }}{{ widget.value.url }}" alt="widget image">
 
 </a>
 {% if not widget.required %}
@@ -18,6 +18,4 @@
 <input id="new-image" class="btn-info text-black" type="{{ widget.type }}" name="{{ widget.name }}"
     {% include "django/forms/widgets/attrs.html" %}>
 
-<strong>
-    <p class="text-danger" id="filename"></p>
-</strong>
+<p class="text-danger" id="filename"></p>
